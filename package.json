@@ -1,15 +1,15 @@
 {
-  "name": "mybot-heroku",
+  "name": "TrapoBot",
   "version": "1.0.0",
   "description": "An in-depth guide on deploying your Discord.js bot on Heroku",
-  "main": "index.js",
+  "main": "TrapoBot.js",
   "engines": {
     "node": "8.x",
     "npm": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node TrapoBot.js"
   },
   "repository": {
     "type": "git",

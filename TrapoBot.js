@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 const commando = require('discord.js-commando')
 const trap = new commando.Client({
   owner: '131403526411780096',
@@ -218,4 +219,4 @@ function clean(text) {
   else
     return text;
 }
-trap.login(token)
+trap.login(process.env.TOKEN);
