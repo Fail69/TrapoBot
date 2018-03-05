@@ -1,0 +1,2 @@
+supervisor TrapoBot.js
+PAUSE

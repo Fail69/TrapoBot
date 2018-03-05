@@ -1,0 +1,16 @@
+{
+  "name":"TrapoBot",
+  "author":"- Fail, Vorpi",
+  "ownerID":"131403526411780096",
+  "invLink":"https://discordapp.com/api/oauth2/authorize?client_id=401764707955900417&permissions=8&scope=bot",
+  "main":"TrapoBot.js",
+  "prefix":"tr!",
+  "token":"NDAxNzY0NzA3OTU1OTAwNDE3.DT7adg.kzfOfTaCXiyJsf5QXE98tAqOQNc",
+  "clbotApiKey":"CC269BaOaVTkTiahbeMywzY1thA",
+  "danLogin": "YuiBot",
+  "danAPIKey":"b9LwZzn9vHjfuOn3RRHIl9zht0q-yUM3k99HLffbdho",
+  "no_error_tracking": true,
+  "osu_token":"c38ad81a1c8da1932fa3b684ed3af7f3924d7f2f",
+  "osu_username":"- Fail",
+  "osu_password":"lol12345"
+}
