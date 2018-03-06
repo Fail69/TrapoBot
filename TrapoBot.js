@@ -71,10 +71,10 @@ trap.on('ready', function() {
   trap.users.get('131403526411780096')
   trap.user.setStatus('online')
   console.log("-----");
-  console.log("TrapoBot just started!");
+  console.log("TrapoBot ha iniciado!");
   console.log('Prefix: "' + config.prefix + '"')
   trap.user.setGame('tr!help <command/all>');
-  console.log("Guilds on: " + trap.guilds.size);
+  console.log("En servidores: " + trap.guilds.size);
   console.log(trap.guilds.map(g => g.name).join("\n"));
   console.log('---------------')
 });
@@ -82,7 +82,7 @@ trap.on('ready', function() {
 trap.on("message", msg => {
   if (!msg.guild) return;
   if (msg.content.startsWith(prefix)) {
-    console.log(`\n${msg.author.username} used a command from ${msg.guild.name}`)
+    console.log(`\n${msg.author.username} usó un comando desde ${msg.guild.name}`)
   }
 })
 trap.on("message", msg => {
@@ -103,7 +103,7 @@ trap.on("message", msg => {
       embed: {
         color: 5497106,
         title: ":sun_with_face: | Level up!",
-        description: `${msg.author.username}, You have just leveled up to level **${curLevel}**! good job, goshoujin-sama!`
+        description: `${msg.author.username}, Has subido al nivel **${curLevel}**! buen trabajo, goshoujin-sama!`
       }
     })
   }
@@ -127,14 +127,14 @@ trap.on("message", msg => {
   }
 });
 trap.on("guildCreate", guild => {
-  console.log(`New guild added "${guild.name}"", owned by ${guild.owner.user.username}`);
+  console.log(`Nuevo server añadido "${guild.name}"", creado por ${guild.owner.user.username}`);
 });
 trap.on('message', msg => {
   if (commandIs('maths', msg)) {
     let args = msg.content.split(" ").slice(1);
     let numArray = args.map(n => parseInt(n));
     let total = numArray.reduce((p, c) => p + c);
-    msg.channel.send('(calculating...)');
+    msg.channel.send('(calculando...)');
     msg.channel.send(total);
   }
 
@@ -180,10 +180,10 @@ trap.on('message', msg => {
   if (commandIs("flip", msg)) {
     var result = Math.floor((Math.random() * 2) + 1);
     if (result == 1) {
-      msg.channel.send("The coin landed on heads");
+      msg.channel.send("La moneda cayó en cara");
     }
     if (result == 2) {
-      msg.channel.send("The coin landed on tails");
+      msg.channel.send("La moneda cayó en cruz");
     }
   }
 });
@@ -196,14 +196,14 @@ trap.on('message', msg => {
   if (commandIs("8ball", msg)) {
     var args = msg.content.split(/[ ]+/);
     if (args.length === 1) {
-      msg.channel.send('You did not use it properly. Usage: `y.8ball do you like traps?`');
+      msg.channel.send('No lo has usado apropiadamente. Usa: `tr!8ball Te gustan los traps?`');
     } else {
       var sayings = ["Yes",
         "No",
-        "I don't think so, goshoujin-sama",
-        "Very doubtful, goshoujin-sama",
-        "I am in doubt of that, goshoujin-sama",
-        "I do not even know, i just want your love, goshoujin-sama"
+        "No lo creo, goshoujin-sama",
+        "Muy dudoso, goshoujin-sama",
+        "Estoy dudoso de ello, goshoujin-sama",
+        "No tengo idea, yo solo quiero tu amor, goshoujin-sama"
       ];
 
       var result = Math.floor((Math.random() * sayings.length) + 0); {
